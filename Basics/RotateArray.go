@@ -30,7 +30,7 @@ func rotateArray(inputAry []int, k int) {
 
 func rotatWithAuxilaryArray(inputAry []int, k int) {
 	len := len(inputAry)
-	auxArray := [6]int{}
+	auxArray := []int{}
 	for i := 0; i < len; i++ {
 		if i+k < len {
 			auxArray[i+k] = inputAry[i]
